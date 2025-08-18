@@ -38,7 +38,7 @@ Tools & Services <br>
 
 2. Transformation (Silver Layer) <br>
    * Apply cleaning, data quality checks, and quarantine invalid records.
-   * Implemented **Slowly Changing Dimension Type 2 (SCD2)** for tracking historical changes in Patients, Providers, Departments, Transactions, Claims, and Codes using **Delta Tables**. Example shown below for cpt_codes
+   * Implemented **Slowly Changing Dimension Type 2 (SCD2)** for tracking historical changes in Patients, Providers, Departments, Transactions, Claims, and Codes using **Delta Tables**. Example shown below for cpt_codes <br>
      <img width="543" height="352" alt="image" src="https://github.com/user-attachments/assets/8c2746d5-3353-46df-850e-477f21bbd751" />
 
    * Standardize schema via Common Data Model.
