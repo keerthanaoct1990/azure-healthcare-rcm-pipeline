@@ -32,3 +32,36 @@ Tools & Services <br>
      
      <img width="1723" height="637" alt="image" src="https://github.com/user-attachments/assets/d131d0e1-2cec-4629-bbd2-1fe24c734e73" />
 
+   * Move claims, CPT, NPI, and ICD data from landing/API to Bronze zone.
+
+   * Maintain ingestion audit logs with metadata.
+
+2. Transformation (Silver Layer) <br>
+   * Apply cleaning, data quality checks, and quarantine invalid records.
+   * Implemented **Slowly Changing Dimension Type 2 (SCD2)** for tracking historical changes in Patients, Providers, Departments, Transactions, Claims, and Codes using **Delta Tables**. Example shown below for cpt_codes
+     <img width="543" height="352" alt="image" src="https://github.com/user-attachments/assets/8c2746d5-3353-46df-850e-477f21bbd751" />
+
+   * Standardize schema via Common Data Model.
+
+3. Aggregation (Gold Layer)
+   * Build Fact and Dimension tables for KPIs and dashboards.
+     <img width="948" height="533" alt="image" src="https://github.com/user-attachments/assets/148bab89-4fbf-4a78-832b-df7ce5374844" />
+
+   * Support business teams, data analysts, and ML workloads.
+
+
+Key Features of project
+
+1. Built scalable ingestion and transformation pipelines with Azure Data Factory and Databricks
+
+2. Implemented the Bronze → Silver → Gold Medallion Architecture
+
+3. Applied SCD2, Common Data Model (CDM), and data quality checks with quarantine handling
+
+4. Designed fact and dimension tables to support BI and KPI reporting
+
+5. Used Unity Catalog to:
+
+    * Store and manage Bronze, Silver, and Gold tables
+
+    * Maintain audit logs for incremental and full loads
